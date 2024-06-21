@@ -1,0 +1,201 @@
+{
+  "Start3": {
+    "pre_delay": 3000,
+    "next": [
+      "探险3",
+      "背包已满3",
+      "治疗3",
+      "Go3"
+    ]
+  },
+  "探险3": {
+    "recognition": "OCR",
+    "expected": "探险",
+    "roi": [ 925, 613, 344, 82 ],
+    "is_sub": true,
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "next": [
+      "背包已满3",
+      "治疗3",
+      "Go3"
+    ]
+  },
+  "治疗3": {
+    "recognition": "OCR",
+    "expected": "快速治疗",
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "next": [
+      "确定治疗3",
+      "Go3"
+    ]
+  },
+  "确定治疗3": {
+    "recognition": "OCR",
+    "expected": "确定",
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "next": [
+      "Go3"
+    ]
+  },
+  "Go3": {
+    "recognition": "OCR",
+    "expected": "出击",
+    "action": "Click",
+    "pre_wait_freezes": 1000,
+    "next": [
+      "等待结束3"
+    ]
+  },
+  "等待结束3": {
+    "next": [
+      "关卡结算页3",
+      "等待3"
+    ]
+  },
+  "等待3": {
+    "pre_wait_freezes": 3000,
+    "is_sub": true
+  },
+  "关卡结算页3": {
+    "recognition": "OCR",
+    "expected": "异变能量",
+    "next": [
+      "结束3"
+    ]
+  },
+  "结束3": {
+    "recognition": "OCR",
+    "expected": "确定",
+    "action": "Click",
+    "pre_wait_freezes": 1000,
+    "pre_delay": 1500,
+    "next": [
+      "爆限定3",
+      "结算完毕3"
+    ]
+  },
+  "爆限定3": {
+    "recognition": "OCR",
+    "expected": "自己用",
+    "action": "Click",
+    "pre_wait_freezes": 1000,
+    "next": [
+      "领取限定3"
+    ]
+  },
+  "领取限定3": {
+    "recognition": "OCR",
+    "expected": "确定",
+    "roi": [ 750, 400, 200, 100 ],
+    "action": "Click",
+    "pre_wait_freezes": 1000,
+    "pre_delay": 20000,
+    "next": [
+      "获取界面3"
+    ]
+  },
+  "获取界面3": {
+    "action": "Click",
+    "target": [ 800, 613, 50, 50 ],
+    "pre_wait_freezes": 5000
+  },
+  "结算完毕3": {
+    "pre_wait_freezes": 3000
+  },
+  "背包已满3": {
+    "recognition": "OCR",
+    "expected": "主厨持有的食灵",
+    "pre_wait_freezes": 500,
+    "next": [
+      "打开背包3"
+    ]
+  },
+  "打开背包3": {
+    "recognition": "OCR",
+    "expected": "去整理",
+    "action": "Click",
+    "pre_wait_freezes": 1000,
+    "pre_delay": 1000,
+    "next": [
+      "进入回收界面3"
+    ]
+  },
+  "进入回收界面3": {
+    "recognition": "OCR",
+    "expected": "回收",
+    "action": "Click",
+    "pre_wait_freezes": 1000,
+    "pre_delay": 1000,
+    "next": [
+      "选择3"
+    ]
+  },
+  "选择3": {
+    "target": [ 732, 292, 66, 19 ],
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "pre_delay": 1000,
+    "next": [
+      "选择二星3"
+    ]
+  },
+  "选择二星3": {
+    "target": [ 1158, 236, 108, 24 ],
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "next": [
+      "选择三星3"
+    ]
+  },
+  "选择三星3": {
+    "target": [ 1158, 321, 108, 24 ],
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "pre_delay": 1000,
+    "next": [
+      "确定3"
+    ]
+  },
+  "确定3": {
+    "recognition": "OCR",
+    "expected": "确定",
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "pre_delay": 1000,
+    "next": [
+      "分解3"
+    ]
+  },
+  "分解3": {
+    "recognition": "OCR",
+    "expected": "回收",
+    "roi": [ 400, 400, 800, 400 ],
+    "action": "Click",
+    "pre_wait_freezes": 500,
+    "pre_delay": 1000,
+    "next": [
+      "收集3"
+    ]
+  },
+  "收集3": {
+    "pre_delay": 1000,
+    "action": "Click",
+    "target": [ 925, 613, 344, 82 ],
+    "pre_wait_freezes": 1000,
+    "next": [
+      "返回3"
+    ]
+  },
+  "返回3": {
+    "pre_delay": 1000,
+    "action": "Click",
+    "target": [ 1221, 31, 28, 24 ],
+    "pre_wait_freezes": 1000,
+    "next": [
+      "探险3"
+    ]
+  }
+}

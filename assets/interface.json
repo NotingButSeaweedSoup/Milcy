@@ -1,0 +1,46 @@
+{
+  "controller": [
+    {
+      "name": "安卓端",
+      "type": "Adb"
+    },
+    {
+      "name": "桌面端",
+      "type": "Win32",
+      "win32": {
+        "method": "Search",
+        "class_name": ".*",
+        "window_name": "Visual Studio"
+      }
+    }
+  ],
+  "resource": [
+    {
+      "name": "官服",
+      "path": [
+        "{PROJECT_DIR}/resource/base"
+      ]
+    },
+    {
+      "name": "B 服",
+      "path": [
+        "{PROJECT_DIR}/resource/base",
+        "{PROJECT_DIR}/resource/bilibili"
+      ]
+    }
+  ],
+  "task": [
+    {
+      "name": "自动刷图（仅分解2星）",
+      "entry": "Start2"
+    },
+    {
+      "name": "自动刷图（分解2、3星）",
+      "entry": "Start3"
+    },
+    {
+      "name": "自动挂委托",
+      "entry": "entrust"
+    }
+  ]
+}
